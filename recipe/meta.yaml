@@ -11,17 +11,17 @@ source:
   sha256: b6bc368cff9f1b7c1a35f56f0a13416c85664d3bd8d00943ff99663482857103
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.9
   run:
-    - pysd >=3.0
-    - python >=3.7
+    - pysd >=3.12
+    - python >=3.9
 
 test:
   imports:
